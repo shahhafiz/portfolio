@@ -20,19 +20,16 @@ export default function Component() {
                     {/* Navigation */}
                     <div class="hidden md:block ml-auto">
                         <ul class="flex justify-end">
-                            <li class="ml-12">
+                            <li class="ml-20">
                                 <a class="text-gray-500 hover:text-blue-500" href="#">Home</a>
                             </li>
-                            <li class="ml-12">
+                            <li class="ml-20">
                                 <a class="text-gray-500 hover:text-blue-500" href="#">About</a>
                             </li>
-                            <li class="ml-12">
-                                <a class="text-gray-500 hover:text-blue-500" href="#">Experience</a>
-                            </li>
-                            <li class="ml-12">
+                            <li class="ml-20">
                                 <a class="text-gray-500 hover:text-blue-500" href="#">Work</a>
                             </li>
-                            <li class="ml-12">
+                            <li class="ml-20">
                                 <a class="text-gray-500 hover:text-blue-500" href="#">Contact</a>
                             </li>
                         </ul>
