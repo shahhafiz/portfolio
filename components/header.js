@@ -3,7 +3,7 @@ export default function Component() {
     return (
         <>
             <Head><title>Shah Al-Hafiz</title></Head>
-            <div class="flex mx-5 sticky top-0">{/* container */}
+            <div class="flex w-full px-5 fixed">{/* container */}
                 <div class="w-full mt-5 flex items-center">
                     {/* Now available */}
                     <div class="w-40 py-2 px-4 bg-blue-100 rounded-full flex justify-center items-center">
