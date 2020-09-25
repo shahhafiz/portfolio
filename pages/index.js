@@ -1,13 +1,17 @@
 import Header from '../components/header'
-import Home from '../components/home'
-import About from '../components/about'
+import Home from './home/home'
+import About from './about/about'
+import Work from './work/work'
+
 export default function Portfolio() {
   return (
     <>
       <Header/>
-      <div class="max-w-6xl mx-auto">
+      <div class="container mx-auto">
         <Home/>
         <About/>
+        <Work/>
+        {/* <About/> */}
       </div>
     </>
   )
