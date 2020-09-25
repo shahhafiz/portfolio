@@ -22,7 +22,7 @@ export default function Header() {
     return (
         <>
             <Head><title>Shah Al-Hafiz</title></Head>
-            <div id="navbar" className="flex w-full px-5 fixed bg-white z-10">
+            <div id="navbar" className="flex w-full px-5 fixed bg-white z-40">
                 <div className="w-full my-5 flex items-center">
                     {/* Now available */}
                     <div className="w-40 py-2 px-4 bg-blue-100 rounded-full flex justify-center items-center">
