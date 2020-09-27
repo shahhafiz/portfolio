@@ -8,7 +8,7 @@ export default function Portfolio() {
   return (
     <>
       <Header/>
-      <div class="container mx-auto px-4">
+      <div className="container mx-auto px-4">
         <Home/>
         <About/>
         <Work/>
