@@ -2,6 +2,7 @@ import Header from '../components/header'
 import Home from './home/home'
 import About from './about/about'
 import Work from './work/work'
+import Contact from './contact/contact'
 
 export default function Portfolio() {
   return (
@@ -11,7 +12,7 @@ export default function Portfolio() {
         <Home/>
         <About/>
         <Work/>
-        {/* <About/> */}
+        <Contact/>
       </div>
     </>
   )

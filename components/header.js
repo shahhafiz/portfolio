@@ -48,6 +48,9 @@ export default function Header() {
                             <li className="ml-20">
                                 <a className="text-gray-500 hover:text-blue-500" href="#">Work</a>
                             </li>
+                            <li className="ml-20">
+                                <a className="text-gray-500 hover:text-blue-500" href="#">Contact</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
