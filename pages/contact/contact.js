@@ -16,7 +16,7 @@ export default function Contact() {
         <div className="h-screen flex flex-col justify-center items-center relative mt-10">
             <div className="font-black text-2xl mt-5">GOT A QUESTION?</div>
             <div className="w-full md:w-2/3 lg:w-1/3 text-center my-2 text-gray-500 text-lg">I’m  available for a job or any freelance opportunities. Looking forward to hearing from you! </div>
-            <div className="flex justify-center">
+            <div className="flex flex-col md:flex-row justify-center items-center">
                 <div className="p-5 flex items-center"> <img src="gmail.svg" className="w-5 mr-2" alt="" /> iamshahhafiz@gmail.com</div>
                 <div className="p-5 flex items-center"> <img src="whatsapp.svg" className="w-5 mr-2" alt="" /> +60 13456 7473</div>
             </div>
