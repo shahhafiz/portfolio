@@ -9,7 +9,7 @@ export default function Header() {
 
     function handleScroll() {
         const scrollY = window.scrollY
-        console.log(scrollY)
+        // console.log(scrollY)
         if (scrollY < 50){
             document.querySelector("#navbar").classList.remove("shadow-sm")
            
