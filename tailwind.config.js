@@ -1,5 +1,8 @@
 module.exports = {
-  purge: {},
+  purge: {
+    layers: ['components', 'utilities'],
+    content: ['./src/**/*.html'],
+  },
   theme: {
     extend: {
       fontSize: {
