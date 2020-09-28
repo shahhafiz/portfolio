@@ -4,31 +4,31 @@ export default function Header() {
     useEffect(() => {
         window.addEventListener('scroll', () => handleScroll())
         window.addEventListener('resize', () => handleResize())
-        
+
         document.querySelector("#hamburger").addEventListener("click", () => toggleSideMenu())
         document.querySelector("#closeSideMenu").addEventListener("click", () => toggleSideMenu())
-        
+
         const menus = document.querySelectorAll(".menu")
         menus.forEach(menu => {
-            menu.addEventListener("click",() => handleNavigate(menu.innerHTML))
+            menu.addEventListener("click", () => handleNavigate(menu.innerHTML))
         })
     }, [])
 
     function toggleSideMenu() {
         const sideMenu = document.querySelector("#sideMenu")
         const hamburger = document.querySelector("#hamburger")
-        
+
         sideMenu.classList.toggle("hidden")
         sideMenu.classList.toggle("block")
-        
+
         hamburger.classList.toggle("hidden")
-        
+
         document.querySelector('body').classList.toggle('overflow-hidden')
     }
-    
+
     function handleResize() {
         const sideMenu = document.querySelector("#sideMenu")
-        if(window.innerWidth > 767){
+        if (window.innerWidth > 767) {
             sideMenu.classList.remove("block")
             sideMenu.classList.add("hidden")
             document.querySelector('body').classList.remove('overflow-hidden')
@@ -37,18 +37,18 @@ export default function Header() {
 
     function handleScroll() {
         const scrollY = window.scrollY
-        if (scrollY < 50){
+        if (scrollY < 50) {
             document.querySelector("#navbar").classList.remove("shadow-sm")
-        } else if (scrollY > 50 ){
+        } else if (scrollY > 50) {
             document.querySelector("#navbar").classList.add("shadow-sm")
         }
     }
-    
-    function handleNavigate(section) { 
+
+    function handleNavigate(section) {
         console.log(section)
-        var elem = document.getElementById(section); 
-        elem.scrollIntoView(); 
-    } 
+        var elem = document.getElementById(section);
+        elem.scrollIntoView();
+    }
 
     return (
         <>
@@ -56,8 +56,12 @@ export default function Header() {
             <div id="navbar" className="flex w-full px-5 fixed bg-white z-40">
                 <div className="w-full my-5 flex items-center">
                     {/* Now available */}
-                    <div className="w-40 py-2 px-4 bg-blue-100 rounded-full flex justify-center items-center">
-                        <span className="text-blue-400 hover:text-blue-500">Now available</span>
+                    <div className="w-42 py-2 px-4 bg-blue-100 rounded-full flex justify-center items-center">
+                        <span className="text-blue-700 hover:text-blue-400">Now available</span>
+                        <span class="ml-1 flex h-3 w-3">
+                            <span class="animate-ping absolute h-3 w-3 rounded-full bg-yellow-400 opacity-75"></span>
+                            <span class="rounded-full h-3 w-3 bg-yellow-400"></span>
+                        </span>
                     </div>
 
                     {/* Hamburger */}
