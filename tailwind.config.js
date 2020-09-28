@@ -1,6 +1,9 @@
 module.exports = {
+  future: {
+    purgeLayersByDefault: true,
+  },
   purge: {
-    layers: [],
+    layers: ['utilities'],
     content: ['./pages/**/*.js','./components/*.js'],
   },
   theme: {
