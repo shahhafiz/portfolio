@@ -26,7 +26,7 @@ export default function Component() {
         {
             title: "What The Food",
             description: "Native Android mobile app that use image recognition to identify items in wet market using machine learning from Firebase",
-            hashtags: "#android #firebase",
+            hashtags: "#ionic #firebase",
             visual: (
                 <div className="flex justify-center items-end bg-green-500 text-center text-white text-2xl py-24">
                     What The Food
@@ -36,7 +36,7 @@ export default function Component() {
         {
             title: "shahhafiz.com",
             description: "An online web portfolio to showcase my experiences, competencies, and skill sets as well as to attract potential employer",
-            hashtags: "#next.js #tailwindcss",
+            hashtags: "#ionic #firebase",
             visual: (
                 <div className="flex justify-center items-end bg-teal-500 text-center text-white text-2xl py-24">
                     shahhafiz.com
