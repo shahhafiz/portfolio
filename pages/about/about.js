@@ -1,6 +1,6 @@
 export default function Component() {
     return (
-        <div className="w-full h-screen flex flex-col justify-center">
+        <div id="About" className="w-full h-screen flex flex-col justify-center">
             <div className="font-bold text-xl">&#128075; Hello, I'm Shah</div>
             <div className="font-normal text-gray-600 leading-10 tracking-wide text-lg md:text-2xl text-justify">
                 a web developer who recently just graduated from University of Malaya with a degree in Computer Science. I have passion in web development as well  as (sometimes) mobile app development.

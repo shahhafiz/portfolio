@@ -47,7 +47,7 @@ export default function Component() {
 
 
     return (
-        <div className={"w-full lg:h-screen flex flex-col justify-center"}>
+        <div id="Work" className={"w-full lg:h-screen flex flex-col justify-center"}>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-10">
                 {
                     works.map((work,key) => {
