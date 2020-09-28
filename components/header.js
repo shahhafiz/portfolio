@@ -1,6 +1,10 @@
 import { useEffect } from "react"
 import Head from 'next/head'
 export default function Header() {
+
+    const menuList = ["Home", "About", "Work", "Contact"]
+
+
     useEffect(() => {
         window.addEventListener('scroll', () => handleScroll())
         window.addEventListener('resize', () => handleResize())
@@ -74,10 +78,13 @@ export default function Header() {
                     {/* Navigation */}
                     <div className="hidden md:block ml-auto">
                         <ul className="flex justify-end">
-                            <li className="menu cursor-pointer ml-20">Home</li>
-                            <li className="menu cursor-pointer ml-20">About</li>
-                            <li className="menu cursor-pointer ml-20">Work</li>
-                            <li className="menu cursor-pointer ml-20">Contact</li>
+                            {
+                                menuList.map(menu => {
+                                    return (
+                                        <li className="menu cursor-pointer ml-20 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:text-blue-400">{menu}</li>
+                                    )
+                                })
+                            }
                         </ul>
                     </div>
                 </div>
@@ -90,10 +97,12 @@ export default function Header() {
                         <img id="closeSideMenu" src="close.svg" alt="" className="w-5 cursor-pointer" />
                     </div>
                     <ul className="flex flex-col items-center text-white">
-                        <li className="menu cursor-pointer hover:text-blue-500 my-5">Home</li>
-                        <li className="menu cursor-pointer hover:text-blue-500 my-5">About</li>
-                        <li className="menu cursor-pointer hover:text-blue-500 my-5">Work</li>
-                        <li className="menu cursor-pointer hover:text-blue-500 my-5">Contact</li>
+                        {
+                            menuList.map(menu => {
+                                return (
+                                <li className="menu cursor-pointer hover:text-blue-500 my-5">{menu}</li>)
+                            })
+                        }
                     </ul>
                 </div>
 
