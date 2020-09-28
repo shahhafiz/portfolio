@@ -61,7 +61,7 @@ export default function Header() {
                 <div className="w-full my-5 flex items-center">
                     {/* Now available */}
                     <div className="w-42 py-2 px-4 bg-blue-100 rounded-full flex justify-center items-center">
-                        <span className="text-blue-700 hover:text-blue-400">Now available</span>
+                        <span className="text-blue-500">Now available</span>
                         <span class="ml-1 flex h-3 w-3">
                             <span class="animate-ping absolute h-3 w-3 rounded-full bg-yellow-400 opacity-75"></span>
                             <span class="rounded-full h-3 w-3 bg-yellow-400"></span>
