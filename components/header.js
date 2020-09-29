@@ -60,7 +60,7 @@ export default function Header() {
                 <title>Shah Hafiz</title>
                 <meta property="og:title" content="Shah Hafiz" key="title" />
                 <meta property="description" content="Shah Hafiz is a Malaysian web developer and freelancer based in Kuala Lumpur. Loves coffee and Youtube." />
-                <meta property="keyword" content="shah, shah hafiz, shah al-hafiz, freelancer, web developer"/>
+                <meta property="keyword" content="shahhafiz.com, shah, shah hafiz, shah al-hafiz, freelancer, web developer"/>
                 <meta property="og:image" content="employee.svg"/>
                 <meta name="google-site-verification" content="8MJ8_94594PPYV93-xkNhgd4C-mSEs4dAjaPsSK4fMw" />
             </Head>
