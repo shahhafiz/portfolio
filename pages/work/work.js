@@ -45,7 +45,7 @@ export default function Component() {
                             <Card
                                 key={key}
                                 work={work}
-                            /> 
+                            />
                         )
                     })
                 }
@@ -65,18 +65,17 @@ function Card(props) {
                 {work.visual}
                 <div className={"flex flex-col justify-between text-center text-gray-600 p-5 flex-grow"}>
                     <div>{work.description}</div>
-                    <a href={work.link} target="_blank" className="relative top-5">
-                        <span className="group cursor-pointer">
-                            <img src="github.png" alt="" className="more w-5 m-2 inline-flex animate-wiggle" />
-                            <span className="text-xs bg-white p-1 rounded border border-black border-opacity-25 group-hover:border-blue-400 group-hover:text-blue-400">Visit repo</span>
-                        </span>
-                    </a>
+                    <div>
+                        <a href={work.link} target="_blank" className="group cursor-pointer">
+                            <img src="github.png" alt="" className="more w-5 m-2 inline-flex animate-wiggle cursor-pointer" />
+                            <span className="text-xs bg-white p-1 rounded border border-black border-opacity-25 group-hover:border-blue-400 group-hover:text-blue-400 cursor-pointer">Visit repo</span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className="bg-blue-100 text-gray-700 h-8 text-center transform -translate-y-1 flex justify-center items-end rounded-b-lg shadow-lg">
                 {work.hashtags}
             </div>
-            
         </div>
     )
 }
