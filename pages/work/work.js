@@ -73,7 +73,7 @@ function Card(props) {
                     </div>
                 </div>
             </div>
-            <div className="bg-blue-100 text-gray-700 h-8 text-center transform -translate-y-1 flex justify-center items-end rounded-b-lg shadow-lg">
+            <div className="bg-white text-gray-700 h-10 text-center transform -translate-y-3 flex justify-center items-end rounded-b-lg shadow-lg object-bottom">
                 {work.hashtags}
             </div>
         </div>
