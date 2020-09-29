@@ -62,9 +62,9 @@ export default function Header() {
                     {/* Now available */}
                     <div className="w-42 py-2 px-4 bg-blue-100 rounded-full flex justify-center items-center">
                         <span className="text-blue-500">Now available</span>
-                        <span class="ml-1 flex h-3 w-3">
-                            <span class="animate-ping absolute h-3 w-3 rounded-full bg-yellow-400 opacity-75"></span>
-                            <span class="rounded-full h-3 w-3 bg-yellow-400"></span>
+                        <span className="ml-1 flex h-3 w-3">
+                            <span className="animate-ping absolute h-3 w-3 rounded-full bg-yellow-400 opacity-75"></span>
+                            <span className="rounded-full h-3 w-3 bg-yellow-400"></span>
                         </span>
                     </div>
 
@@ -79,9 +79,9 @@ export default function Header() {
                     <div className="hidden md:block ml-auto">
                         <ul className="flex justify-end">
                             {
-                                menuList.map(menu => {
+                                menuList.map((menu,key) => {
                                     return (
-                                        <li className="menu cursor-pointer ml-20 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:text-blue-400">{menu}</li>
+                                        <li key={key} className="menu cursor-pointer ml-20 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:text-blue-400">{menu}</li>
                                     )
                                 })
                             }
@@ -98,9 +98,9 @@ export default function Header() {
                     </div>
                     <ul className="flex flex-col items-center text-white">
                         {
-                            menuList.map(menu => {
+                            menuList.map((menu,key) => {
                                 return (
-                                <li className="menu cursor-pointer hover:text-blue-500 my-5">{menu}</li>)
+                                <li key={key} className="menu cursor-pointer hover:text-blue-500 my-5">{menu}</li>)
                             })
                         }
                     </ul>
