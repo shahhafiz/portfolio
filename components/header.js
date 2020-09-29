@@ -56,7 +56,13 @@ export default function Header() {
 
     return (
         <>
-            <Head><title>Shah Al-Hafiz</title></Head>
+            <Head>
+                <title>Shah Hafiz</title>
+                <meta property="og:title" content="Shah Hafiz" key="title" />
+                <meta property="description" content="Shah Hafiz is a Malaysian web developer and freelancer based in Kuala Lumpur. Loves coffee and Youtube." />
+                <meta property="keyword" content="shah, shah hafiz, shah al-hafiz, freelancer, web developer"/>
+                <meta property="og:image" content="employee.svg"/>
+            </Head>
             <div id="navbar" className="flex w-full px-5 fixed bg-white z-40">
                 <div className="w-full my-5 flex items-center">
                     {/* Now available */}
