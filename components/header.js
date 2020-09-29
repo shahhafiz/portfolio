@@ -62,6 +62,7 @@ export default function Header() {
                 <meta property="description" content="Shah Hafiz is a Malaysian web developer and freelancer based in Kuala Lumpur. Loves coffee and Youtube." />
                 <meta property="keyword" content="shah, shah hafiz, shah al-hafiz, freelancer, web developer"/>
                 <meta property="og:image" content="employee.svg"/>
+                <meta name="google-site-verification" content="8MJ8_94594PPYV93-xkNhgd4C-mSEs4dAjaPsSK4fMw" />
             </Head>
             <div id="navbar" className="flex w-full px-5 fixed bg-white z-40">
                 <div className="w-full my-5 flex items-center">
