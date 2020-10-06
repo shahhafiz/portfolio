@@ -7,9 +7,6 @@ import Contact from './contact/contact'
 import smoothscroll from 'smoothscroll-polyfill'
 
 export default function Portfolio() {
-  
-  smoothscroll.polyfill();
-  
   return (
     <>
       <Header/>
