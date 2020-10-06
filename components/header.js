@@ -49,9 +49,8 @@ export default function Header() {
     }
 
     function handleNavigate(section) {
-        console.log(section)
         var elem = document.getElementById(section);
-        elem.scrollIntoView();
+        elem.scrollIntoView({ behavior: 'smooth' });
     }
 
     return (
@@ -60,9 +59,9 @@ export default function Header() {
                 <title>Shah Hafiz</title>
                 <meta property="og:title" content="Shah Hafiz" key="title" />
                 <meta property="description" content="Shah Hafiz is a Malaysian web developer and freelancer based in Kuala Lumpur. Loves coffee and Youtube." />
-                <meta property="keyword" content="shahhafiz.com, shah, shah hafiz, shah al-hafiz, freelancer, web developer"/>
+                <meta property="keyword" content="shahhafiz.com, shah, shah hafiz, shah al-hafiz, freelancer, web developer" />
                 <meta name="google-site-verification" content="8MJ8_94594PPYV93-xkNhgd4C-mSEs4dAjaPsSK4fMw" />
-                <link rel="shortcut icon" href="employee.svg"/>
+                <link rel="shortcut icon" href="employee.svg" />
                 <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
             </Head>
             <div id="navbar" className="flex w-full px-5 fixed bg-white z-40">
@@ -87,7 +86,7 @@ export default function Header() {
                     <div className="hidden md:block ml-auto">
                         <ul className="flex justify-end">
                             {
-                                menuList.map((menu,key) => {
+                                menuList.map((menu, key) => {
                                     return (
                                         <li key={key} className="menu cursor-pointer ml-20 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:text-blue-400">{menu}</li>
                                     )
@@ -106,9 +105,9 @@ export default function Header() {
                     </div>
                     <ul className="flex flex-col items-center text-white">
                         {
-                            menuList.map((menu,key) => {
+                            menuList.map((menu, key) => {
                                 return (
-                                <li key={key} className="menu cursor-pointer hover:text-blue-500 my-5">{menu}</li>)
+                                    <li key={key} className="menu cursor-pointer hover:text-blue-500 my-5">{menu}</li>)
                             })
                         }
                     </ul>
