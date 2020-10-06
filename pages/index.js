@@ -4,9 +4,12 @@ import About from './about/about'
 import Work from './work/work'
 import Contact from './contact/contact'
 
-import 'smoothscroll-polyfill'
+import smoothscroll from 'smoothscroll-polyfill'
 
 export default function Portfolio() {
+  
+  smoothscroll.polyfill();
+  
   return (
     <>
       <Header/>
