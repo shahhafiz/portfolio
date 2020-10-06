@@ -101,7 +101,7 @@ export default function Header() {
             <div id="sideMenu" className="bg-black bg-opacity-75 h-screen w-screen fixed hidden z-40">
                 <div className="w-64 fixed z-40 inset-y-0 right-0">
                     <div className="flex justify-end m-6">
-                        <img id="closeSideMenu" src="close.svg" alt="" className="w-5 cursor-pointer" />
+                        <img id="closeSideMenu" src="close.svg" alt="" className="w-5 h-5 cursor-pointer" />
                     </div>
                     <ul className="flex flex-col items-center text-white">
                         {
