@@ -56,8 +56,8 @@ export default function Header() {
     return (
         <>
             <Head>
-                <title>Shah Hafiz</title>
-                <meta property="og:title" content="Shah Hafiz" key="title" />
+                <title>Shah Hafiz's Portfolio</title>
+                <meta property="og:title" content="Shah Hafiz is a Malaysian web developer based in Kuala Lumpur who provides web development service and freelancing. Highly competences in ReactJs, NextJS, Angular and Ionic. He also writes blog to share his knowledges and experiences in this field" key="title" />
                 <meta property="description" content="Shah Hafiz is a Malaysian web developer and freelancer based in Kuala Lumpur. Loves coffee and Youtube." />
                 <meta property="keyword" content="shahhafiz.com, shah, shah hafiz, shah al-hafiz, freelancer, web developer" />
                 <meta name="google-site-verification" content="8MJ8_94594PPYV93-xkNhgd4C-mSEs4dAjaPsSK4fMw" />
